@@ -18,7 +18,8 @@ export default function Chat() {
   }, [messages]);
 
   return (
-    <div className="flex flex-col w-full max-w-md h-screen mx-auto bg-gray-100 shadow-lg">
+   <div className='bg-[#001220]'>
+     <div className="flex flex-col w-full max-w-md h-screen mx-auto bg-gray-100 shadow-lg">
       <div className="flex-grow overflow-y-auto p-4 space-y-4">
         {messages.map((m) => (
           <div
@@ -53,5 +54,6 @@ export default function Chat() {
         </button>
       </form>
     </div>
+   </div>
   );
 }
